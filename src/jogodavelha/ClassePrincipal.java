@@ -4,6 +4,12 @@ import armazenamento.GerenciaJogadores;
 import armazenamento.GerenciaJogadoresArrayList;
 import java.util.Scanner;
 
+/**
+ * Classe principal do jogo da velha. Gerencia o menu principal e a interação com o usuário.
+ *
+ * @author Guilherme Lerner e João Samuel Luy
+ * @version 1.2
+ */
 public class ClassePrincipal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -43,6 +49,12 @@ public class ClassePrincipal {
         scanner.close();
     }
 
+    /**
+     * @param tabuleiro O tabuleiro do jogo a ser utilizado, podendo ser 3x3 ou 5x5.
+     * @param gerenciaJogadores A instância de gerenciamento dos jogadores e pontuações.
+     *
+     * @exception IllegalArgumentException Se o tabuleiro ou o gerenciamento de jogadores for inválido.
+     */
     private static void iniciarJogo(Tabuleiro tabuleiro, GerenciaJogadores gerenciaJogadores) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o nome do Jogador 1: ");

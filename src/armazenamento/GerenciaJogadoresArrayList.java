@@ -1,3 +1,4 @@
+
 package armazenamento;
 
 import java.io.PrintStream;
@@ -5,6 +6,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * @author Guilherme Lerner e João Samuel Luy
+ * @version 1.2
+ */
 public class GerenciaJogadoresArrayList implements GerenciaJogadores {
     // Lista para armazenar os jogadores e suas pontuações
     private List<JogadorPontuacao> jogadores = new ArrayList<>();
@@ -12,6 +17,13 @@ public class GerenciaJogadoresArrayList implements GerenciaJogadores {
     // Construtor padrão
     public GerenciaJogadoresArrayList() {
     }
+
+    /**
+     * Salva ou atualiza a pontuação de um jogador.
+     *
+     * @param nome O nome do jogador. Não deve ser nulo.
+     * @param pontuacao A pontuação do jogador. Deve ser um valor não negativo.
+     */
 
     // Método para salvar ou atualizar a pontuação de um jogador
     public void salvarJogador(String nome, int pontuacao) {
@@ -31,6 +43,13 @@ public class GerenciaJogadoresArrayList implements GerenciaJogadores {
         // Se o jogador já existir, atualiza a pontuação
         jogador.setPontuacao(pontuacao);
     }
+
+    /**
+     * Recupera a pontuação de um jogador pelo nome.
+     *
+     * @param nome O nome do jogador. Não deve ser nulo.
+     * @return A pontuação do jogador. Se o jogador não for encontrado, retorna 0.
+     */
 
     // Método para recuperar a pontuação de um jogador pelo nome
     public int recuperarPontuacao(String nome) {
@@ -75,15 +94,33 @@ public class GerenciaJogadoresArrayList implements GerenciaJogadores {
             this.pontuacao = pontuacao;
         }
 
+        /**
+         * Getter para o nome do jogador.
+         *
+         * @return O nome do jogador.
+         */
+
         // Getter para o nome do jogador
         public String getNome() {
             return this.nome;
         }
 
+        /**
+         * Getter para a pontuação do jogador.
+         *
+         * @return A pontuação do jogador.
+         */
+
         // Getter para a pontuação do jogador
         public int getPontuacao() {
             return this.pontuacao;
         }
+
+        /**
+         * Setter para atualizar a pontuação do jogador.
+         *
+         * @param pontuacao A nova pontuação do jogador. Deve ser um valor não negativo.
+         */
 
         // Setter para atualizar a pontuação do jogador
         public void setPontuacao(int pontuacao) {

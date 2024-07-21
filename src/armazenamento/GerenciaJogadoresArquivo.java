@@ -10,6 +10,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * @author Guilherme Lerner e João Samuel Luy
+ * @version 1.2
+ */
 public class GerenciaJogadoresArquivo implements GerenciaJogadores {
     // Nome do arquivo que armazena os dados dos jogadores
     private static final String ARQUIVO_JOGADORES = "jogadores.txt";
@@ -21,6 +25,13 @@ public class GerenciaJogadoresArquivo implements GerenciaJogadores {
     public GerenciaJogadoresArquivo() {
         this.carregarJogadores();
     }
+
+    /**
+     * Salva ou atualiza a pontuação de um jogador.
+     *
+     * @param nome O nome do jogador. Não deve ser nulo.
+     * @param pontuacao A pontuação do jogador. Deve ser um valor não negativo.
+     */
 
     // Método para salvar ou atualizar a pontuação de um jogador
     public void salvarJogador(String nome, int pontuacao) {

@@ -1,3 +1,13 @@
-TRABALHO FINAL DE POO DOS ALUNOS JOÃO LUY E GUILHERME LERNER
-COM FUNCIONALIDADE EXTRA DE TABULEIRO 5X5
-COM PASTA DO JAVA DOC
+---
+
+<h1 align="left">📚 Trabalho de Programação Orientada a Objetos 📚</h1>
+
+---
+
+<h2 align="left">Professora: Inali</h2>
+
+<h2 align="left">Tema: Jogo da Velha </h2>
+
+<h2 align="left">Adicionais: Funcionalidade extra de tabulerio 5x5 </h2>
+
+---
